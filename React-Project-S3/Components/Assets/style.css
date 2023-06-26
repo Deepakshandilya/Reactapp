@@ -1,0 +1,41 @@
+.navbar-brand img {
+	width: 100px;
+	height: 100px;
+}
+
+.top-navbar li a {
+	text-decoration: none;
+}
+
+.account-header img {
+	width: 100px;
+	height: 100px;
+}
+
+.red-text {
+	color: #ad0404;
+}
+
+.version-text {
+	float: right;
+}
+
+form {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.body {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+footer {
+	bottom: 0;
+	font-size: 10px;
+	position: absolute;
+}
+
+footer p {
+	text-align: center;
+}
