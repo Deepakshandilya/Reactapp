@@ -1,0 +1,31 @@
+
+# Install CodeDeploy Agent
+sudo yum update -y
+sudo yum install -y ruby wget
+wget https://aws-codedeploy-us-east-2.s3.us-east-2.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
+
+# Check CodeDeploy Agent status
+sudo service codedeploy-agent status
+
+# Install Nginx
+sudo amazon-linux-extras install -y nginx1
+
+# Check Nginx status
+sudo service nginx status
+
+# Start Nginx
+sudo service nginx start
+
+# Enable Nginx to restart on system reboot
+sudo chkconfig nginx on
+
+# Creating folders for deployments
+sudo mkdir -p /var/www/my-react-project/public
+
+# Changing Nginx configuration
+sudo nano /etc/nginx/nginx.conf
+
+# Restart Nginx
+sudo service nginx rest
